@@ -20,7 +20,7 @@ const config: Config = {
         30: '#808080',
         50: '#8895B3',
         60:'#7985A1',
-        
+        'transparent':'rgb(0,0,0,0.2)',
       },
       pink:{
         20:'#F6EFEF'

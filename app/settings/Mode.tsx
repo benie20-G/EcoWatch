@@ -38,6 +38,7 @@ function Mode() {
                                 alt={theme.title}
                             />
                             <div className={` w-full bg-${theme.thirdColor} h-10 rounded-md`}></div>
+                            <div className='bg-blue-10 bg-pink-20 bg-blue-20 bg-blue-30 bg-blue-40 bg-gray-60'></div>{/*this is for enabling retrieval of those colors from theme.colors it doesn't show anything else */}
                             <div className='flex  gap-2 w-full'>
                                 <div className={`w-1/6 h-10  bg-${theme.forthColor} rounded-md`}></div>
                                 <div className={`w-1/6 h-10  bg-${theme.forthColor} rounded-md`}></div>

@@ -8,15 +8,15 @@ export const NAV_LINKS = [
   export const WASTES = [
     {
         title: 'Plastic Wastes',
-        icon: '/map.svg',
+        icon: '/plastic.svg',
         variant: 'green',
         data:'190',
-         search:"Latest search",
-         date:"12/05/2023"
+        search:"Latest search",
+        date:"12/05/2023"
       },
     {
       title: 'Gas Wastes',
-      icon: '/map.svg',
+      icon: '/gas.svg',
       variant: 'red',
       data:'56',
        search:"Latest search",
@@ -24,7 +24,7 @@ export const NAV_LINKS = [
     },
     {
         title: 'Chemical Wastes ',
-        icon: '/map.svg',
+        icon: '/chemical.svg',
         variant: 'gray',
         data:'345',
          search:"Latest search",
@@ -32,7 +32,7 @@ export const NAV_LINKS = [
       },
       {
         title: 'Organisms',
-        icon: '/map.svg',
+        icon: '/organisms.svg',
         variant: 'orange',
         data:'56',
          search:"Latest search",

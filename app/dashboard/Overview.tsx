@@ -2,8 +2,9 @@ import { STATES } from '@/constants'
 import React from 'react'
 
 function Overview() {
+  
   return (
-    <section className='flex gap-10  p-4'>
+    <section className='flex gap-6  p-2 '>
 <div className='w-3/5 rounded-2xl bg-white p-4 '>
   <h2>Recent tests</h2>
   <p  className='text-gray-30 text-[14px] '>view the anual report of tests made in different waters.</p>

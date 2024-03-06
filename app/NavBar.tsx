@@ -12,10 +12,10 @@ function NavBar() {
         {NAV_LINKS.map((link)=>(
             <Link href={link.href} key={link.key}
             className="regular-16 text-gray-50 flexCenter cursor-pointer pb-1.5 transition-all hover:font-bold hover:text-green-500">
-               
+           
                <Image
 src={link.icon}
-alt='settings'
+alt={link.key}
 width={24}
 height={24}
 />

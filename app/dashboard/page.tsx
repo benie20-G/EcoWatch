@@ -1,6 +1,5 @@
 import Image from "next/image";
-import Dashboard from "./dashboard/Dashboard";
-import SettingsPage from "./Settings/SettingsPage";
+import Dashboard from "./Dashboard";
 
 
 export default function Home() {

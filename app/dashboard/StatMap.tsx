@@ -3,9 +3,9 @@ import Image from 'next/image'
 import Link from 'next/link'
 function StatMap() {
   return (
-<section className='flex gap-10 border px-4'>
+<section className='flex gap-6 border px-2 '>
 <div className=' rounded-2xl p-4 bg-white w-2/5'>
-  <h2 className='font-bold flex justify-between'> Water Wastes<span className='font-normal text-gray-30 flex items-center gap-4'>details<Link href="/"><Image src="go.svg" alt='continue' width={10} height={20}/></Link></span></h2>
+  <h2 className='font-bold flex justify-between'> Water Wastes<span className='font-normal text-gray-30 '><Link className='flex items-center gap-4' href="/">details<Image src="go.svg" alt='continue' width={10} height={20}/></Link></span></h2>
   <p className='text-gray-30 text-[14px]'>Amount of wastes present in water</p>
 
   <div className='graph'>
@@ -18,7 +18,7 @@ function StatMap() {
 </div>
 
 <div className='r rounded-2xl p-4 bg-white  w-3/5'>
-  <h2 className='font-bold flex justify-between'>Map<span className='font-normal text-gray-30 flex items-center gap-4'>details<Link href="/"><Image src="go.svg" alt='continue' width={10} height={20}/></Link></span></h2>
+  <h2 className='font-bold flex justify-between'>Map<span className='font-normal text-gray-30'><Link className='flex items-center gap-4' href="/">details<Image src="go.svg" alt='continue' width={10} height={20}/></Link></span></h2>
   <p className='text-gray-30 text-[14px]'>See the level of water in different waters</p>
 <div className='flex'>
   <div className='w-[450px] h-[300px]  flex p-4'>

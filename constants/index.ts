@@ -1,5 +1,5 @@
 export const NAV_LINKS = [
-    { href: '/', key: 'home', label: 'Home', icon:"home.svg" },
+    { href: '/dashboard', key: 'home', label: 'Home', icon:"home.svg" },
     { href: '/', key: 'statistics', label: 'Statistics', icon:"statistics.svg" },
     { href: '/', key: 'Location', label: 'Location', icon:"location.svg" },
     { href: '/', key: 'camera ', label: 'Camera ', icon:"camera.svg" },
@@ -64,28 +64,62 @@ export const STATES = [
 
 export const SIDEBARLINKS =[
     {
-        href:"/",
+        href:"/settings",
         icon:'components.svg',
         title:'Components'
     },
     {
-        href:"/",
+        href:"/settings",
         icon:'manual.svg',
         title:'Ugase Manual'
     },
     {
-        href:"/",
+        href:"/settings",
         icon:'licence.svg',
-        title:'License'
+        title:'Licence'
     },
     {
-        href:"/",
+        href:"/settings",
         icon:'terms_and_privacy.svg',
         title:'Terms & Privacy'
     },
     {
-        href:"/",
+        href:"/settings",
         icon:'mode.svg',
         title:'System Mode'
     },
+]
+
+export const MODES=[
+    {
+      mainColor:'white',
+      secondColor:'pink-20',
+      thirdColor:'gray-60',
+      forthColor:'blue-dark',
+      buttonColor:'blue-dark',
+      title:"Sytem Mode",
+      description:"Default Mode of the system",
+      rating:4.5
+
+    },
+    {
+        mainColor:'pink-20',
+        secondColor:'white',
+        thirdColor:'blue-10',
+        forthColor:'blue-30',
+        buttonColor:'pink-20',
+        title:"Light Mode",
+        description:"Light Mode of the system",
+        rating:3.5
+      },
+    {
+        mainColor:'white',
+        secondColor:'blue-dark',
+        thirdColor:'blue-40',
+        forthColor:'blue-20',
+        buttonColor:'blue-dark',
+        title:"Dark Mode",
+        description:"Dark Mode of the system",
+        rating:3
+    }
 ]

@@ -4,6 +4,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import Button from '../Button'
 import { useState } from 'react'
+import LoadingBar from './LoadingBar'
 
 function Mode() {
     const [selectedTheme,setSelectedTheme] = useState<string>("Dark Mode")
@@ -93,9 +94,10 @@ function Mode() {
             </div>
 
 
-            <div>
+            <div className='flex flex-col gap-4'>
                 <h1 className='font-bold text-[20px]'>Brightness</h1>
                 <p>Regulate the Brightness of your system</p>
+                <LoadingBar/>
             </div>
 
 

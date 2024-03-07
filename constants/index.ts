@@ -1,6 +1,6 @@
 export const NAV_LINKS = [
     { href: '/dashboard', key: 'home', label: 'Home', icon:"home.svg" },
-    { href: '/', key: 'statistics', label: 'Statistics', icon:"statistics.svg" },
+    { href: '/statistics', key: 'statistics', label: 'Statistics', icon:"statistics.svg" },
     { href: '/', key: 'Location', label: 'Location', icon:"location.svg" },
     { href: '/', key: 'camera ', label: 'Camera ', icon:"camera.svg" },
 
@@ -122,4 +122,27 @@ export const MODES=[
         description:"Dark Mode of the system",
         rating:3
     }
+]
+export const TESTS=[
+    {
+        component:"PH",
+        Depth:"35.67",
+        value:"3.7",
+    },
+    {
+        component:"Temperature",
+        Depth:"58",
+        value:"24oC",
+    },
+    {
+        component:"Carbon Dioxide",
+        Depth:"31",
+        value:"120km3",
+    },
+    {
+        component:"Methane",
+        Depth:"12.3",
+        value:"12 cu mi",
+    },
+
 ]

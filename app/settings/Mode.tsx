@@ -30,7 +30,7 @@ function Mode() {
                     <div className='flex flex-col gap-4 w-1/3'>
                         {selectedTheme === "Licence"}
                     
-                    <div key={theme.title} className={`bg-${theme.mainColor} bg-gray-10 flex flex-col gap-5 p-3 rounded-2xl ${theme.title === selectedTheme ?' border-2 border-dashed border-black' : 'border-none'} `}>
+                    <div key={theme.title} className={`bg-${theme.mainColor} bg-gray-10 flex flex-col gap-5 p-3 rounded-2xl ${theme.title === selectedTheme ?' border-2 border-dashed border-black shadow-lg shadow-gray-300' : 'border-none'} `}>
                         <div className={`flex flex-col gap-5 p-3 pt-6 bg-${theme.secondColor} h-auto rounded-2xl`}>
                             <Image
                                 src='\theme.svg'
@@ -79,7 +79,7 @@ function Mode() {
 
                     </div>
                     <Button
-                     selectedTheme={selectedTheme} onSelectTheme={handleThemeSelection}
+                    selectedTheme={selectedTheme} onSelectTheme={handleThemeSelection}
                     type='button'
                     name={theme.title}
                     title='Choose Theme'

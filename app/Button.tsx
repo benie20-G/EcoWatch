@@ -15,7 +15,7 @@ function Button({type,title,icon,variant,full,name,selectedTheme,onSelectTheme}:
   return (
     
     <button
-    className={`flexCenter gap-3  text-${name===selectedTheme?'black':'white'} rounded-2xl h-12 border bg-${variant} ${full&&"w-full"}`}
+    className={`flexCenter gap-3hover:transform hover:scale-105 hover:opacity-80 transition-all duration-700 text-${name===selectedTheme?'black':'white'} rounded-2xl h-12 border bg-${variant} ${full&&"w-full"}`}
     onClick={()=>onSelectTheme(name)}
     
     type={type}>

@@ -5,16 +5,20 @@ import Link from 'next/link'
 import Button from '../Button'
 import { useState } from 'react'
 import LoadingBar from './LoadingBar'
+interface Props{
+    width:string
+   }
 
-function Mode() {
+function Mode({width}:Props) {
     const [selectedTheme,setSelectedTheme] = useState<string>("Dark Mode")
   
     const handleThemeSelection =(theme :string) =>{
       setSelectedTheme(theme);
     };
+
     return (
 
-        <section className='p-6 rounded-2xl w-3/4 bg-white flex flex-col gap-6 mt-2'>
+        <section className={`p-6 rounded-2xl w-${width} bg-white flex flex-col gap-6 mt-2`}>
             <div className='flex flex-col gap-8'>
                 <h1 className='font-bold text-blue-dark text-2xl'>Change The System Color Mode</h1>
                 <p>Congratulations on acquiring your water drone integrated with a system interface!
@@ -31,7 +35,7 @@ function Mode() {
                         {selectedTheme === "Licence"}
                     
                     <div key={theme.title} className={`bg-${theme.mainColor} bg-gray-10 flex flex-col gap-5 p-3 rounded-2xl ${theme.title === selectedTheme ?' border-2 border-dashed border-black shadow-lg shadow-gray-300' : 'border-none'} `}>
-                        <div className={`flex flex-col gap-5 p-3 pt-6 bg-${theme.secondColor} h-auto rounded-2xl`}>
+                        <div className={`flex flex-col  justify-center gap-5 rounded-2xl p-3 pt-6 bg-${theme.secondColor}  ${width=='full' ? 'h-[250px]  gap-8':''} `}>
                             <Image
                                 src='\theme.svg'
                                 width={90}
@@ -39,7 +43,7 @@ function Mode() {
                                 alt={theme.title}
                             />
                             <div className={` w-full bg-${theme.thirdColor} h-10 rounded-md`}></div>
-                            <div className='bg-blue-10 bg-pink-20 bg-blue-20 bg-blue-30 bg-blue-40 bg-gray-60'></div>{/*this is for enabling retrieval of those colors from theme.colors it doesn't show anything else */}
+                            <div className='bg-blue-10 w-3/4 bg-pink-20 bg-blue-20 bg-blue-30 bg-blue-40 bg-gray-60'></div>{/*this is for enabling retrieval of those colors from theme.colors it doesn't show anything else */}
                             <div className='flex  gap-2 w-full'>
                                 <div className={`w-1/6 h-10  bg-${theme.forthColor} rounded-md`}></div>
                                 <div className={`w-1/6 h-10  bg-${theme.forthColor} rounded-md`}></div>

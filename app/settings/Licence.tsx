@@ -1,8 +1,10 @@
 import React from 'react'
-
-function Licence() {
+ interface Props{
+  width:string
+ }
+function Licence({width}:Props) {
   return (
-  <section className='p-6 rounded-2xl w-3/4 bg-white flex flex-col gap-6 mt-2'>
+  <section className={`p-6 rounded-2xl w-${width} bg-white flex flex-col gap-6 mt-2`}>
     <div className='flex flex-col gap-8'>
         <h1 className='font-bold text-blue-dark text-2xl'>Licence Agreement</h1>
         <p>This License Agreement a legal agreement between you (either an individual or

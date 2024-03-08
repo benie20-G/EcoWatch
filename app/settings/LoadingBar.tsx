@@ -35,7 +35,7 @@ const LoadingBar = () => {
       <div className={barStyle}>
         <div className={fillStyle}></div>
         <Image
-        className='bg-white rounded-full p-1 -ml-5'
+        className='bg-white rounded-full p-1 -ml-5 hover:shadow-2xl hover:shadow-black'
         src='./modelight.svg'
         width={45}
         height={45}

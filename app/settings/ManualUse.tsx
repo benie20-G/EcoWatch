@@ -1,8 +1,11 @@
 import React from 'react'
+interface Props{
+    width:string
+   }
 
-function ManualUse() {
+function ManualUse({width}:Props) {
   return (
-    <section className='p-6 rounded-2xl w-3/4 bg-white flex flex-col gap-6 mt-2'>
+    <section className={`p-6 rounded-2xl w-${width} bg-white flex flex-col gap-6 mt-2`}>
     <div className='flex flex-col gap-8'>
         <h1 className='font-bold text-blue-dark text-2xl'>Water Drone User Manual</h1>
         <p>Congratulations on acquiring your water drone integrated with a system interface! 

@@ -11,8 +11,11 @@ interface SideBarProps{
 
 function SideBar({ selectedPage, onSelectPage }: SideBarProps) {
 
+ 
+
   return (
-<nav className=' w-1/4  bg-white p-4  h-[536px] rounded-tl-2xl rounded-tr-2xl mx-4 sticky top-20 left-0 overflow-y-auto '>
+<nav className=' w-full  bg-white p-4 h-[536px] rounded-tl-2xl rounded-tr-2xl   sticky top-20 left-0 overflow-y-auto'>
+ 
     <ul className='flex flex-col gap-4 '>
         {SIDEBARLINKS.map((link)=>(
             <li>

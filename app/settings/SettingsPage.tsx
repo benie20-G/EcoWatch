@@ -37,7 +37,7 @@ function SettingsPage() {
             {selectedPage === "Licence" && <Licence width={hidden?'full':'3/4'} />}
             {selectedPage === "Components" && <Structure  width={hidden?'full':'3/4'} />}
             {selectedPage === "Terms & Privacy" && <TermsPrivacy   width={hidden?'full':'3/4'}/>}
-            {selectedPage === "Ugase Manual" &&  <ManualUse  width={hidden?'full':'3/4'}/>}
+            {selectedPage === "Usage Manual" &&  <ManualUse  width={hidden?'full':'3/4'}/>}
             {selectedPage === "System Mode" && <Mode  width={hidden?'full':'3/4'}/>}
             <h1 className={`absolute left-[310px] top-[90px] ${hidden?'left-[31px] ':''}`} onClick={handleHidden}>menu</h1>
       

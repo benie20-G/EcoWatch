@@ -1,3 +1,4 @@
+
 export const NAV_LINKS = [
     { href: '/dashboard', key: 'home', label: 'Home', icon:"home.svg" },
     { href: '/statistics', key: 'statistics', label: 'Statistics', icon:"statistics.svg" },
@@ -71,7 +72,7 @@ export const SIDEBARLINKS =[
     {
         href:"/settings",
         icon:'manual.svg',
-        title:'Ugase Manual'
+        title:'Usage Manual'
     },
     {
         href:"/settings",
@@ -143,6 +144,26 @@ export const TESTS=[
         component:"Methane",
         Depth:"12.3",
         value:"12 cu mi",
+    },
+    
+
+]
+
+export const SENSORS =[
+    {
+        icon:"./methane.svg",
+        title:"Methane Gas Sensor",
+        description:` Detected ${TESTS[3].value} of methane gas at ${TESTS[3].Depth}`,
+    },
+    {
+        icon:"./aquatic.svg",
+        title:"Aquatic Animal Sensor",
+        description:` Detected more than 50 fishes at a distance of 243 meters from the shore`,
+    },
+    {
+        icon:"./chemicalS.svg",
+        title:"Chemical Properties Sensor",
+        description:` Detected 0.5% increase in the normal PH and a 1.57% increase in the temperature`,
     },
 
 ]

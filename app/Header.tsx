@@ -12,10 +12,10 @@ function Header({title}:header) {
         <Image
         src="search.svg"
         alt='search'
-        width={15}
-        height={15}
+        width={20}
+        height={20}
         />
-        <input type="text" placeholder='Search...' className='outline-none border-0 bg-gray-15'/>
+        <input type="text" placeholder='Search...' className='outline-none border-0 p-4 rounded-md bg-gray-15 focus:border'/>
       </div>
 
       <div className='h-10 w-20 border gap-2 border-gray-10 p-4 rounded-[6px] flex item-center justify-center'>

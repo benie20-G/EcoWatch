@@ -6,7 +6,7 @@ type header ={
 
 function Header({title}:header) {
   return (
-<div className='flex justify-between items-center bg-gray-15 p-4 w-full sticky top-0 z-50'>
+<div className='flex justify-between items-center bg-gray-15 px-4 w-full sticky top-0 z-50 '>
     <h1 className='font-bold text-3xl'>{title}</h1>
       <div className='flex  items-center justify-center gap-4'>
         <Image

@@ -7,7 +7,10 @@ import ManualUse from './ManualUse'
 import Licence from './Licence'
 import Structure from './Structure'
 import TermsPrivacy from './TermsPrivacy'
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import Mode from './Mode'
+import { faArrowAltCircleDown } from '@fortawesome/free-solid-svg-icons/faArrowAltCircleDown'
 
 function SettingsPage() {
   const [selectedPage,setSelectedPage] = useState<string>("System Mode")
@@ -39,7 +42,8 @@ function SettingsPage() {
             {selectedPage === "Terms & Privacy" && <TermsPrivacy   width={hidden?'full':'3/4'}/>}
             {selectedPage === "Usage Manual" &&  <ManualUse  width={hidden?'full':'3/4'}/>}
             {selectedPage === "System Mode" && <Mode  width={hidden?'full':'3/4'}/>}
-            <h1 className={`absolute left-[310px] top-[90px] ${hidden?'left-[31px] ':''}`} onClick={handleHidden}>menu</h1>
+            <FontAwesomeIcon icon={faBars} className={`fixed bg-orange-50 active:bg-gray-20 rounded-md w-8 h-8 p-2 left-6 ${hidden?'left-[31px] ':''}`} onClick={handleHidden}/>
+
       
     </div>
 

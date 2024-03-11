@@ -19,7 +19,7 @@ function SideBar({ selectedPage, onSelectPage }: SideBarProps) {
     <ul className='flex flex-col gap-4 '>
         {SIDEBARLINKS.map((link)=>(
             <li>
-            <Link key={link.title} href={link.href} onClick={()=>onSelectPage(link.title)} className={`flex gap-4 items-center rounded-sm ${link.title === selectedPage ? 'bg-gray-20':''}  p-4`}>
+            <Link key={link.title} href={link.href} onClick={()=>onSelectPage(link.title)} className={`flex gap-4 items-center rounded-md ${link.title === selectedPage ? 'bg-gray-20':''}  p-4`}>
             <Image
             src={link.icon}
             alt='icon'
